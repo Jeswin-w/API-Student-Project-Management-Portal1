@@ -1,0 +1,81 @@
+TypeError: Cannot read properties of undefined (reading 'length')
+    at Query.onResult (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:255:35)
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:153:11)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at Query.onResult (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:253:12)
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:153:11)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:251:8
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:112:3)
+TypeError: Cannot read properties of undefined (reading 'length')
+    at Query.onResult (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:255:35)
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:153:11)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at Query.onResult (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:253:12)
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:153:11)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:251:8
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:112:3)
+TypeError: Cannot read properties of undefined (reading 'length')
+    at Query.onResult (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:666:32)
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:153:11)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at Query.onResult (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:664:16)
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:153:11)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:661:8
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:112:3)
+Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:148:17)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:334:8
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:275:10)
+Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:148:17)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:163:8
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:275:10)
+Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:148:17)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:316:8
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\index.js:275:10)
+C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:482
+            var total=result.length;
+                             ^
+
+TypeError: Cannot read properties of undefined (reading 'length')
+    at Query.onResult (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:482:30)
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:153:11)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at Query.onResult (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:481:12)
+    at Connection._addCommandClosedState (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:153:11)
+    at Connection.query (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\mysql2\lib\connection.js:546:17)
+    at C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js:477:8
+    at Layer.handle [as handle_request] (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\express\lib\router\route.js:112:3)
