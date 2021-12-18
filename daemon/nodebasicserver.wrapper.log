@@ -1,0 +1,18 @@
+2021-12-18 15:16:59 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js --scriptoptions= --log "nodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-18 15:16:59 - Started 13960
+2021-12-18 15:19:06 - Stopping nodebasicserver.exe
+2021-12-18 15:19:06 - ProcessKill 13960
+2021-12-18 15:19:06 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-18 15:19:52 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\ex.js --scriptoptions= --log "nodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-18 15:19:53 - Started 7036
