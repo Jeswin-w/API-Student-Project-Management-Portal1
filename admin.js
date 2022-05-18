@@ -106,7 +106,7 @@ app.post('/editfaculty.html',(req, res)=>{
                     secure: true,
                     auth:{
                         user: "apiprojectportal@gmail.com",
-                        pass: "tceit123"
+                        pass: "baba5*BC"
                     },
                     tls:{
                         rejectUnauthorized: false
@@ -278,7 +278,7 @@ app.post('/enroll.html',(req, res)=>{
                     secure: true,
                     auth:{
                         user: "apiprojectportal@gmail.com",
-                        pass: "tceit123"
+                        pass: "baba5*BC"
                     },
                     tls:{
                         rejectUnauthorized: false
@@ -426,7 +426,7 @@ function importExcelData2MySQL(filePath){
                     secure: true,
                     auth:{
                         user: "apiprojectportal@gmail.com",
-                        pass: "tceit123"
+                        pass: "baba5*BC"
                     },
                     tls:{
                         rejectUnauthorized: false
