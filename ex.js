@@ -705,7 +705,7 @@ app.get('/fcourses1', (req, res) => {
         var q1 = `select dept from faculty_advisor where fid='${fid}'`;
         db.query(q1, (err, result) => {
             var dept = result[0].dept;
-            var q2 = `select * from course  where cdept='${dept}'`;
+            var q2 = `select c.* from course c inner join team t on c.course_id=t.course_id where t.fid='${fid}'`;
             db.query(q2, (err, result1) => {
 
                 res.send(result1);

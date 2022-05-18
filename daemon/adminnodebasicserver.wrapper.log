@@ -1,2 +1,144 @@
 2021-12-18 15:26:53 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2021-12-18 15:26:53 - Started 2748
+2021-12-18 21:12:13 - Stopping adminnodebasicserver.exe
+2021-12-18 21:12:13 - ProcessKill 2748
+2021-12-18 21:12:13 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-18 21:13:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-18 21:13:01 - Started 6640
+2021-12-18 21:40:28 - Stopping adminnodebasicserver.exe
+2021-12-18 21:40:28 - ProcessKill 6640
+2021-12-18 21:40:28 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-18 21:41:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-18 21:41:00 - Started 6968
+2021-12-22 01:06:39 - Stopping adminnodebasicserver.exe
+2021-12-22 01:06:39 - ProcessKill 6968
+2021-12-22 01:06:41 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-22 01:10:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-22 01:10:40 - Started 6980
+2021-12-22 01:10:57 - Stopping adminnodebasicserver.exe
+2021-12-22 01:10:57 - ProcessKill 6980
+2021-12-22 01:10:57 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-22 05:37:09 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-22 05:37:09 - Started 7284
+2021-12-27 00:51:01 - Stopping adminnodebasicserver.exe
+2021-12-27 00:51:01 - ProcessKill 7284
+2021-12-27 00:51:01 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-27 00:51:32 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-27 00:51:32 - Started 6192
+2021-12-27 00:52:00 - Stopping adminnodebasicserver.exe
+2021-12-27 00:52:00 - ProcessKill 6192
+2021-12-27 00:52:00 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-27 09:12:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-27 09:12:40 - Started 7060
+2022-01-15 02:09:37 - Stopping adminnodebasicserver.exe
+2022-01-15 02:09:37 - ProcessKill 7060
+2022-01-15 02:09:37 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-01-15 02:10:08 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-15 02:10:08 - Started 6476
+2022-01-15 02:10:48 - Stopping adminnodebasicserver.exe
+2022-01-15 02:10:48 - ProcessKill 6476
+2022-01-15 02:10:48 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-01-15 11:44:13 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\node_modules\node-windows\lib\wrapper.js --file C:\Users\DELL\Desktop\jeswin\API-Student-Project-Management-Portal-TCE\admin.js --scriptoptions= --log "adminnodeBasicServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-15 11:44:13 - Started 5332
+2022-01-26 00:54:10 - Stopping adminnodebasicserver.exe
+2022-01-26 00:54:10 - ProcessKill 5332
+2022-01-26 00:54:10 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
