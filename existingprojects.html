@@ -41,7 +41,7 @@
 <table class="table table-bordered" style="padding: 30px 30px; width: 90%; font-size: 16px;" id='protab'>
 
     <tr style="padding: 30px 30px; background-color: #003380; color: whitesmoke;">
-        <th>Project ID</th>
+        
         <th>Project Name</th>
         <th>Description</th>
         <th>Department</th>
@@ -49,12 +49,13 @@
         <th>Course</th>
         <th>Team Details</th>
         <th>Guide</th>
+        <th>View details</th>
         </tr>
 
 <tbody>
     
 <tr ng-repeat="x in pro | filter : project">
-    <td>{{x.project_id}}</td>
+    
     <td>{{x.project_name}}</td>
     <td>{{x.project_desc}}</td>
     <td>{{x.cdept}}</td>
@@ -62,6 +63,7 @@
     <td>{{x.course_id}}</td>
     <td>{{x.team_members}}</td>
     <td>{{x.fname}}</td>
+    <td><a href="view-project.html?pid={{x.project_id}}" class="btn btn-primary" style="background-color: #003380" >View</a></td>
     </tr>
 </tbody>
 

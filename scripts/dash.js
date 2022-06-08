@@ -133,4 +133,7 @@ $http.get('/teamsub').then(function(data) {
         $scope.pro = data.data;
     })
     
+    $http.get('/view-project2').then(function(data) {
+        $scope.vpro = data.data;
+    })
 })

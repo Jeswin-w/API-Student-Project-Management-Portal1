@@ -120,6 +120,7 @@ app.post('/teamdetails', (req, res) => {
     var tm3 = req.body.t3.substring(7);
     var tm4 = req.body.t4.substring(7);
     if (tm1 != tm2 & tm2 != tm3 & tm3 != tm4 & tm1 != tm3 & tm2 != tm4) {
+
         var tm = `${tm1},${tm2},${tm3},${tm4}`;
         tma = tm.split(',')
         let q = `insert into team (team_members,course_id,team_name,fid,cdept) values('${tm}','${req.session.course_id}','${teamname}','${guide}','${req.session.cdept}')`;
@@ -741,8 +742,33 @@ app.get('/fdashboard.html', (req, res) => {
 app.get('/existingprojects.html', (req, res) => {
     res.sendFile(`${__dirname}/existingprojects.html`)
 })
+vpro=[];
+app.get('/view-project.html', (req, res) => {
+    var pid=req.query.pid;
+    vpro=[pid]
+    let q=`Select p.team_id,t.course_id from project p inner join team t on p.team_id=t.team_id where project_id=${pid}`;
+    db.query(q, (err, result) => {
+        //console.log(result);
+        if (err) throw err;
+        vpro=[...vpro,result[0]["team_id"],result[0]["course_id"]];
+        
+    });
+    res.sendFile(`${__dirname}/view-project.html`)
+})
+
+app.get('/view-project2', (req, res)=>{
+    var team_id=vpro[1];
+
+    let q=`select ss.*,asub.sub_title,asub.sub_desc,asub.due_date from ssub ss inner join add_submission asub on ss.sid=asub.sid where ss.team_id='${team_id}' `;
+    db.query(q, (err, result)=>{
+        if(err) throw err;
+        res.send(result);
+    })
+
+})
 
 app.get('/projectList', (req, res) => {
+    
     let q = `SELECT p.* , t.team_id, t.team_members, t.team_name, t.course_id, t.cdept, fa.fname FROM project as p INNER JOIN team as t ON t.team_id = p.team_id INNER JOIN faculty_advisor as fa ON t.fid = fa.fid`;
     db.query(q, (err, result) => {
         //console.log(result);

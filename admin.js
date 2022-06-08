@@ -10,10 +10,10 @@ const { Console } = require('console');
 const nodemailer = require("nodemailer");
 const { getMaxListeners } = require('process');
 const { findSeries } = require('async');
-const bodyparser = require('body-parser')
+const bodyparser = require('body-parser');
 const fs = require('fs');
 const readXlsxFile = require('read-excel-file/node');
-const mysql = require('mysql')
+const mysql = require('mysql');
 
 
 
@@ -375,6 +375,7 @@ app.post('/upcou',(req, res)=>{
 
 
 })
+
 app.post('/upproject',(req, res)=>{
     
     var batch = req.body.batch;
@@ -390,6 +391,7 @@ app.post('/upproject',(req, res)=>{
         res.redirect('editprojects.html')
     })
 })
+
 
 function importExcelData2MySQL(filePath){
 
