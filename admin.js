@@ -101,19 +101,20 @@ app.post('/editfaculty.html',(req, res)=>{
                     console.log(err);
                 }
                 let transporter = nodemailer.createTransport({
-                    host: "smtp.gmail.com",
-                    port: 465,
-                    secure: true,
+                    host: "smtp-mail.outlook.com",
+
+                    secureConnection: false,
+                    port: 587,
                     auth:{
-                        user: "apiprojectportal@gmail.com",
-                        pass: "baba5*BC"
+                        user: "campusnavigators@outlook.com",
+                        pass: "tceit123"
                     },
                     tls:{
                         rejectUnauthorized: false
                     }
                 });
                 let mailoptions = {
-                    from: '"ADMIN" <tceprojectportal@gmail.com>',
+                    from: '"ADMIN" <campusnavigators@outlook.com>',
                     to: `${mail}`,
                     subject: "TCE PROJECTS PORTAL - Registration",
                     html: msg,
@@ -273,12 +274,12 @@ app.post('/enroll.html',(req, res)=>{
                 //console.log(res);
                 var msg = `<p>Dear ${result[0]['name']} - ${regno} ,<br>This is the notification about registration on TCE Project Management Portal. You successfully enrolled in the below course. <br><br> Course ID: ${course_id} <br> Course name: ${res[0]['course_name']} <br> Course Dept: ${dept} <br><br>Thank you<br><br>Regards,<br>TCE PROJECTS ADMIN.`
                 let transporter = nodemailer.createTransport({
-                    host: "smtp.gmail.com",
-                    port: 465,
-                    secure: true,
+                    host: "smtp-mail.outlook.com",
+                    secureConnection: false,
+                    port: 587,
                     auth:{
-                        user: "apiprojectportal@gmail.com",
-                        pass: "baba5*BC"
+                        user: "campusnavigators@outlook.com",
+                        pass: "tceit123"
                     },
                     tls:{
                         rejectUnauthorized: false
@@ -287,7 +288,7 @@ app.post('/enroll.html',(req, res)=>{
                 var mailid = `${result[0]['mail']}`;
                 //console.log(mailid)
                 let mailoptions = {
-                    from: '"ADMIN" <tceprojectportal@gmail.com>',
+                    from: '"ADMIN" <campuavigators@outlook.com>',
                     to: `${mailid}`,
                     subject: "TCE PROJECTS PORTAL - Registration",
                     html: msg,
@@ -423,12 +424,12 @@ function importExcelData2MySQL(filePath){
                 //console.log(res);
                 var msg = `<p>Dear ${result[0]['name']} - ${regno} ,<br>This is the notification about registration on TCE Project Management Portal. You successfully enrolled in the below course. <br><br> Course ID: ${course_id} <br> Course name: ${res[0]['course_name']} <br> Course Dept: ${dept} <br><br>Thank you<br><br>Regards,<br>TCE PROJECTS ADMIN.`
                 let transporter = nodemailer.createTransport({
-                    host: "smtp.gmail.com",
-                    port: 465,
-                    secure: true,
+                    host: "smtp-mail.outlook.com",
+                    secureConnection: false,
+                    port: 587,
                     auth:{
-                        user: "apiprojectportal@gmail.com",
-                        pass: "baba5*BC"
+                        user: "campusnavigators@outlook.com",
+                        pass: "tceit123"
                     },
                     tls:{
                         rejectUnauthorized: false
@@ -437,7 +438,7 @@ function importExcelData2MySQL(filePath){
                 var mailid = `${result[0]['mail']}`;
                 console.log(mailid)
                 let mailoptions = {
-                    from: '"ADMIN" <tceprojectportal@gmail.com>',
+                    from: '"ADMIN" <campuavigators@outlook.com>',
                     to: `${mailid}`,
                     subject: "TCE PROJECTS PORTAL - Registration",
                     html: msg,
