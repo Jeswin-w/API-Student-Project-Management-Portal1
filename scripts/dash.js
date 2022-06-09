@@ -136,4 +136,8 @@ $http.get('/teamsub').then(function(data) {
     $http.get('/view-project2').then(function(data) {
         $scope.vpro = data.data;
     })
+
+    $http.get('/editsub').then(function(data) {
+        $scope.editsubmission = data.data;
+    })
 })

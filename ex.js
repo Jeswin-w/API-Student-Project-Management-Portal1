@@ -766,6 +766,38 @@ app.get('/view-project2', (req, res)=>{
     })
 
 })
+var editsubid=[];
+app.get(`/editsubmissions.html`,(req, res)=>{
+    editsubid=[req.query.sid];
+    let q=`select * from add_submission where sid=${editsubid[0]}`;
+    db.query(q, (err, result)=>{
+        if(err) throw err;
+        editsubid=[...editsubid,result[0]["sub_title"],result[0]["sub_desc"],result[0]["due_date"]];
+        //console.log(editsubid);
+    })
+    res.sendFile(`${__dirname}/editsubmissions.html`)
+
+})
+
+app.get('/editsub',(req, res)=>{
+    //console.log(editsubid)
+    res.send(editsubid);
+    })
+app.post('/editsubmission',(req, res)=>{
+    var sid=editsubid[0];
+    var stitle = req.body.sub_title;
+    var sdesc = req.body.sub_desc;
+    var sdue = req.body.sub_due;
+
+    let q=`update add_submission set sub_title='${stitle}',sub_desc='${sdesc}',due_date='${sdue}' where sid='${sid}'`;
+    db.query(q, (err, result) => {
+        //console.log(result,sid,stitle,sdesc,sdue,editsubid);
+        if (err) throw err;
+        res.redirect('/fdashboard.html')
+
+    });
+
+})
 
 app.get('/projectList', (req, res) => {
     
