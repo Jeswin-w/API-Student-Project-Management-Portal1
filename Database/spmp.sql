@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2022 at 07:13 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.13
+-- Generation Time: Jun 17, 2022 at 09:44 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -36,16 +36,6 @@ CREATE TABLE `add_submission` (
   `cdept` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `add_submission`
---
-
-INSERT INTO `add_submission` (`sid`, `sub_title`, `sub_desc`, `due_date`, `course_id`, `cdept`) VALUES
-(2, 'Requirements gathering', 'Get stakeholder requirements', '2021-12-14', '18ES390 - A', 'IT'),
-(3, 'SRS', 'submit srs doc', '2021-12-17', '18ES390 - A', 'IT'),
-(4, 'sub1', 'do submission', '2021-12-18', '18ES590 - A', 'IT'),
-(5, 'Design document', 'UML diagrams', '2021-12-25', '18ES390 - A', 'IT');
-
 -- --------------------------------------------------------
 
 --
@@ -64,7 +54,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `mail`, `password`) VALUES
-(1, 'admin', 'admin@gmail.com', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y');
+(1, 'admin', 'admin@tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y');
 
 -- --------------------------------------------------------
 
@@ -85,7 +75,6 @@ CREATE TABLE `course` (
 
 INSERT INTO `course` (`course_id`, `fid`, `course_name`, `cdept`) VALUES
 ('18ES590 - A', 'IT002', 'SYSTEM THINKING', 'IT'),
-('18ES590 - B', 'IT004', 'SYSTEM THINKING', 'IT'),
 ('18ES690 - A', 'IT001', 'ENGINEERING DESIGN', 'IT'),
 ('18ES690 - B', 'IT003', 'ENGINEERING DESIGN', 'IT'),
 ('18ES790 - A', 'IT002', 'CAPSTONE PROJECT', 'IT'),
@@ -93,7 +82,8 @@ INSERT INTO `course` (`course_id`, `fid`, `course_name`, `cdept`) VALUES
 ('18IT810 - A', 'IT001', 'FINAL SEM PROJECT', 'IT'),
 ('18IT810 - A', 'IT003', 'FINAL SEM PROJECT', 'IT'),
 ('18ES390 - A', 'IT001', 'DESIGN THINKING', 'IT'),
-('18ES390 - B', 'IT004', 'DESIGN THINKING', 'IT');
+('18ES390 - B', 'IT004', 'DESIGN THINKING', 'IT'),
+('18ES590 - B', 'G001', 'SYSTEM THINKING', 'MECH');
 
 -- --------------------------------------------------------
 
@@ -114,27 +104,22 @@ CREATE TABLE `enrollment` (
 --
 
 INSERT INTO `enrollment` (`regno`, `course_id`, `dept`, `team_status`, `enroll_id`) VALUES
-('19IT027', '18ES390 - A', 'it', 1, 1),
-('19IT040', '18ES390 - A', 'IT', 1, 2),
-('19IT041', '18ES390 - A', 'IT', 1, 3),
-('19IT027', '18ES390 - B', 'it', 0, 4),
-('19IT027', '18ES590 - A', 'it', 0, 5),
-('19IT040', '18ES590 - A', 'IT', 0, 6),
-('19IT041', '18ES590 - A', 'IT', 0, 7),
-('19IT027', '18ES690 - A', 'IT', 0, 8),
-('19IT041', '18ES690 - A', 'IT', 0, 9),
-('19IT040', '18ES690 - A', 'IT', 0, 10),
-('19IT027', '18ES790 - A', 'it', 0, 11),
-('19IT082', '18ES390 - A', 'IT', 1, 12),
-('19IT027', '18ES690 - A', 'IT', 0, 13),
-('19IT027', '18ES590 - B', 'it', 0, 14),
-('19IT027', '18ES790 - B', 'it', 0, 15),
-('19IT041', '18ES390 - A', 'IT', 1, 16),
-('19IT040', '18ES390 - B', 'IT', 0, 17),
-('19IT082', '18ES590 - A', 'IT', 0, 18),
-('19IT041', '18ES390 - A', 'IT', 1, 19),
-('19IT040', '18ES390 - B', 'IT', 0, 20),
-('19IT082', '18ES590 - A', 'IT', 0, 21);
+('19IT082', '18ES690 - B', 'IT', 0, 26),
+('19IT025', '18ES690 - B', 'IT', 0, 27),
+('19IT027', '18ES690 - B', 'IT', 1, 28),
+('19IT033', '18ES690 - B', 'IT', 1, 29),
+('19IT040', '18ES690 - B', 'IT', 0, 30),
+('19IT041', '18ES690 - B', 'IT', 0, 33),
+('19IT073', '18ES690 - B', 'IT', 1, 34),
+('19IT074', '18ES690 - B', 'IT', 1, 35),
+('19IT075', '18ES690 - B', 'IT', 1, 36),
+('19IT093', '18ES690 - B', 'IT', 1, 37),
+('19IT101', '18ES690 - B', 'IT', 1, 38),
+('19IT019', '18ES690 - B', 'IT', 1, 39),
+('19G031', '18ES590 - B', 'MECH', 1, 40),
+('19G059', '18ES590 - B', 'MECH', 1, 41),
+('19G103', '18ES590 - B', 'MECH', 1, 42),
+('19G060', '18ES590 - B', 'MECH', 1, 43);
 
 -- --------------------------------------------------------
 
@@ -155,9 +140,10 @@ CREATE TABLE `faculty_advisor` (
 --
 
 INSERT INTO `faculty_advisor` (`fid`, `mail`, `password`, `dept`, `fname`) VALUES
-('IT001', 'faculty001@gmail.com', '$2b$10$3TagMF3ExLxHS1Kg.Xa7DufZQAZTnpfPIEnBR7DmM2SZftkjhiU62', 'IT', 'Faculty_001'),
-('IT002', 'faculty002@gmail.com', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'IT', 'Faculty_002'),
-('IT003', 'faculty003@gmail.com', '$2b$10$zfskrFsANwkyGOrv/42Ir.sPEVYIT99g4PC8yc2wO8GpEoQOBLHiy', 'IT', 'Faculty_003');
+('G001', 'g001@tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'MECH', 'MECH FACULTY'),
+('IT001', 'faculty001@tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'IT', 'Faculty_001'),
+('IT002', 'faculty002@tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'IT', 'Faculty_002'),
+('IT003', 'faculty003@tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'IT', 'Faculty_003');
 
 -- --------------------------------------------------------
 
@@ -179,8 +165,9 @@ CREATE TABLE `project` (
 --
 
 INSERT INTO `project` (`project_id`, `project_name`, `team_id`, `project_desc`, `domain`, `batch`) VALUES
-(8, 'social medias', 5, 'social media', 'web dev', '2019-2023'),
-(15, 'API project', 7, 'website', 'web dev', '2019-2023');
+(16, 'URBAN BUS TRACKING SYSTEM', 15, 'Tracking passenger count in real time.', 'IoT ', '2019-2023'),
+(17, 'Movie Recommendation System', 14, 'ML model to recommend movies.', 'Machine Learning', '2019-2023'),
+(19, 'E-Magnetic bicycle', 17, 'Magnet Powered BiCycle', 'Design', '2019-2023');
 
 -- --------------------------------------------------------
 
@@ -197,14 +184,6 @@ CREATE TABLE `ssub` (
   `cf_status` varchar(100) NOT NULL DEFAULT 'Not updated',
   `guide_status` varchar(100) NOT NULL DEFAULT 'Not Updated'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `ssub`
---
-
-INSERT INTO `ssub` (`subid`, `team_id`, `sid`, `originalfile`, `file`, `cf_status`, `guide_status`) VALUES
-(7, 5, 2, 'testfile.xlsx', '1639723863052-388471683..xlsx', 'Not updated', 'checked'),
-(8, 5, 3, 'testfile.xlsx', '1639809517664-865858713..xlsx', 'Not updated', 'Not Updated');
 
 -- --------------------------------------------------------
 
@@ -225,10 +204,22 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`regno`, `mail`, `password`, `name`, `dept`) VALUES
-('19IT027', 'eniyan@student.tce.edu', '$2b$10$GKFmox3lM7VK6FUunW2P5OGjXyqNeFDxhcGhnMtQyDpRnigchJz5y', 'Eniyan', 'IT'),
-('19IT040', 'jeswinw07@gmail.com', '$2b$10$niaF.B4DizHGc462aQvkA.F3oHDTGijjM0EUDpnLTBK8K5dRkJRue', 'Jeswin W', 'IT'),
-('19IT041', 'rahulhariesh847@gmail.com', '$2b$10$GKFmox3lM7VK6FUunW2P5OGjXyqNeFDxhcGhnMtQyDpRnigchJz5y', 'Jeya Ganesh', 'IT'),
-('19IT082', 'yasotha775@gmail.com', '$2b$10$GKFmox3lM7VK6FUunW2P5OGjXyqNeFDxhcGhnMtQyDpRnigchJz5y', 'Sanjaykumar S', 'IT');
+('19G031', 'jeganathan@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'JEGANATHAN R', 'MECH'),
+('19G059', 'nanthakumarp@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'NANTHA KUMAR P', 'MECH'),
+('19G060', 'nawinkumaar@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'NAWINKUMAAR S', 'MECH'),
+('19G103', 'surriaprakash@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'SURRIYAPRAKASH G', 'MECH'),
+('19IT019', 'daya@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'DAYA ANAND C', 'IT'),
+('19IT025', 'dixon@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'DIXON J ANTONY A', 'IT'),
+('19IT027', 'eniyanmaran@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'ENIYAN MS', 'IT'),
+('19IT033', 'harish@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'HARISH J', 'IT'),
+('19IT040', 'jeswin@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'JESWIN W', 'IT'),
+('19IT041', 'jeyaganesh@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'JEYA GANESH A V', 'IT'),
+('19IT073', 'ragul@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'RAGUL MGA', 'IT'),
+('19IT074', 'rahulhariesh@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'RAHUL HARIESH B', 'IT'),
+('19IT075', 'ravi@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'RAVI KUMAR K', 'IT'),
+('19IT082', 'sanjaykumars@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'SANJAYKUMAR S', 'IT'),
+('19IT093', 'siddharth@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'SIDDHARTH S', 'IT'),
+('19IT101', 'sreesh@student.tce.edu', '$2b$10$7X7FISgpSEJWysKYcs5kpOE4Gih4w9S0FX.AzdP9FF8PTV2CfzA1y', 'SREESH N', 'IT');
 
 -- --------------------------------------------------------
 
@@ -250,7 +241,9 @@ CREATE TABLE `team` (
 --
 
 INSERT INTO `team` (`team_id`, `team_members`, `course_id`, `team_name`, `fid`, `cdept`) VALUES
-(5, '19IT027,19IT040,19IT041,19IT08', '18ES390 - A', 'Staraptors', 'IT001', 'IT');
+(14, '19IT073,19IT101,19IT093,19IT07', '18ES690 - B', 'ZERO DIVISION ERROR', 'IT003', 'IT'),
+(15, '19IT027,19IT019,19IT075,19IT03', '18ES690 - B', 'SENTINELS', 'IT002', 'IT'),
+(17, '19G031,19G059,19G060,19G103', '18ES590 - B', 'TEAM NK', 'G001', 'MECH');
 
 --
 -- Indexes for dumped tables
@@ -327,13 +320,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `enrollment`
 --
 ALTER TABLE `enrollment`
-  MODIFY `enroll_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `enroll_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project`
-  MODIFY `project_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `project_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `ssub`
@@ -345,7 +338,7 @@ ALTER TABLE `ssub`
 -- AUTO_INCREMENT for table `team`
 --
 ALTER TABLE `team`
-  MODIFY `team_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `team_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

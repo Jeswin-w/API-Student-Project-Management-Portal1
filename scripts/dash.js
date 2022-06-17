@@ -13,6 +13,7 @@ app.controller('dashcon', function($scope, $http ) {
 		$scope.cb = data.data;
         $scope.ba=$scope.cb[0];
         $scope.de=$scope.cb[1];
+        $scope.domain=$scope.cb[2];
         $scope.barChartObject = {};
     $scope.barChartObject.type = 'BarChart';
     $scope.barChartObject.data = {"cols": [
@@ -33,6 +34,15 @@ $scope.barChartObject1 = {};
 $scope.barChartObject1.options = {
 	'title': 'Department'
 };
+$scope.domainchart={};
+$scope.domainchart.type = "PieChart";
+    $scope.domainchart.data = {"cols": [
+    {id: "t", label: "Domain", type: "string"},
+    {id: "s", label: "No of projects", type: "number"}
+    ], "rows": $scope.domain};
+    $scope.domainchart.options={
+        'title':'Domain'
+    }
 
 
 	})
@@ -139,5 +149,9 @@ $http.get('/teamsub').then(function(data) {
 
     $http.get('/editsub').then(function(data) {
         $scope.editsubmission = data.data;
+    })
+
+    $http.get('/editsubprevsub').then(function(data) {
+        $scope.editsubprev=data.data;
     })
 })
