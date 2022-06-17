@@ -75,7 +75,18 @@ tr, td{
             <div class="card-body"><br>
               <h5 class="card-title" >{{x.sub_desc}}</h5><br>
               <div ng-if="x.sub_status=='submitted'">
-                <h6 style="color:green"><br>{{x.sub_status | uppercase}} </h6></div>
+                <h6 style="color:green"><br>{{x.sub_status | uppercase}} </h6>
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                    <a href="editfilesub.html?subid={{x.subid}}&&sid={{x.sid}}" class="btn btn-primary" style="background-color: green; padding: 15px 20px; border-radius: 500px;">EDIT SUBMISSION</a>
+                    </div>
+                    <div class="col-sm-4">
+                    <p>Faculty remarks: {{x.cfstatus}}</p>
+                    <p>Guide remarks: {{x.gstatus}}</p>
+                    </div>
+                </div>
+            </div>
                 
     
                    

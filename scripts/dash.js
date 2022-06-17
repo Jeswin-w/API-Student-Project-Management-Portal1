@@ -150,4 +150,8 @@ $http.get('/teamsub').then(function(data) {
     $http.get('/editsub').then(function(data) {
         $scope.editsubmission = data.data;
     })
+
+    $http.get('/editsubprevsub').then(function(data) {
+        $scope.editsubprev=data.data;
+    })
 })

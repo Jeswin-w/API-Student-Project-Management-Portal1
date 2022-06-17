@@ -502,6 +502,10 @@ app.get('/submissions', (req, res) => {
                 for (let j = 0; j < result1.length; j++) {
                     if (result[i].sid == result1[j].sid) {
                         result[i]['sub_status'] = 'submitted'
+                        result[i]['subid'] = result1[j].subid
+                        result[i]['cfstatus'] =result1[j].cf_status;
+                        result[i]['gstatus'] =result1[j].guide_status;
+
 
                     }
                 }
@@ -816,4 +820,36 @@ app.get('/projectList', (req, res) => {
         if (err) throw err;
         res.send(result);
     });
+});
+var sub_id;
+app.get('/editfilesub.html', (req, res) => {
+    req.session.sid=req.query.sid;
+    sub_id=req.query.subid;
+    res.sendFile(`${__dirname}/editfilesub.html`);
+})
+app.get('/editsubprevsub',(req, res) => {
+
+    let q=`Select * from ssub where subid=${sub_id}`;
+    db.query(q, (err, result) => {
+        res.send(result);
+    })
+
+
+})
+
+app.post('/editupl', upload.single('filer'), function(req, res) {
+    //console.log(req.session)
+
+    const file = req.file
+    if (!file) {
+        res.write(`<script>window.alert('Upload file');window.location.href = 'filesub.html';</script>`);
+    }
+
+    let q = `Update ssub set originalfile='${file.originalname}',file='${file.filename}' where subid=${sub_id}`
+    db.query(q, (err, result) => {
+        if (err)
+            throw (err)
+        //console.log('Insert')
+        res.redirect(`/course.html?cid=${req.session.course_id}&cdept=${req.session.cdept}&cou_name=${req.session.course_name}`)
+    })
 });
