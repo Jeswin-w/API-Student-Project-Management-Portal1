@@ -263,9 +263,18 @@ app.get('/chartbatch',(req, res)=>{
                 var t1={c:[{v: result1[i]['cdept']},{v:result1[i]['count(*)']},]};
                 re1.push(t1)
             }
-
-            arr3=[re,re1]
+            
+            let q3=`select domain,count(*) from project group by domain`;
+            db.query(q3, (err, result)=>{
+                var re2=[];
+                for( var i=0;i<result.length;i++){
+                var t1={c:[{v: result[i]['domain']},{v:result[i]['count(*)']},]};
+                re2.push(t1);
+            
+               
+            arr3=[re,re1,re2]
             res.send(arr3)
+        }});
         })
 
     })
