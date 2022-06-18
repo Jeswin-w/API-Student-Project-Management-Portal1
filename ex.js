@@ -270,11 +270,11 @@ app.get('/chartbatch',(req, res)=>{
                 for( var i=0;i<result.length;i++){
                 var t1={c:[{v: result[i]['domain']},{v:result[i]['count(*)']},]};
                 re2.push(t1);
-            
+                }
                
             arr3=[re,re1,re2]
             res.send(arr3)
-        }});
+        });
         })
 
     })
