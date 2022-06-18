@@ -287,10 +287,7 @@ app.post('/changepass', (req, res)=>{
     var newpass = req.body.newpassword1;
     var newpass1 = req.body.newpassword2;
     var email = req.session.email;
-    // console.log(email)
-    // console.log(newpass)
-    // console.log(newpass1)
-    // console.log(oldpass)
+     
     if(newpass1 == newpass)
     {
         let qr = `SELECT password from faculty_advisor WHERE mail='${email}'`

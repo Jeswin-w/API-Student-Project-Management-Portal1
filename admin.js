@@ -107,7 +107,7 @@ app.post('/editfaculty.html',(req, res)=>{
                     port: 587,
                     auth:{
                         user: "campusnavigators@outlook.com",
-                        pass: "tceit123"
+                        pass: "projects123"
                     },
                     tls:{
                         rejectUnauthorized: false
@@ -121,8 +121,10 @@ app.post('/editfaculty.html',(req, res)=>{
                 }
                 transporter.sendMail(mailoptions, (err, info)=>{
                     if(err)
-                        throw err;
+                    console.log("Message not sent");
+                    else{
                     console.log("Message sent");
+                    }
                     res.redirect('/editfaculty.html')
                 })
             })
@@ -279,7 +281,7 @@ app.post('/enroll.html',(req, res)=>{
                     port: 587,
                     auth:{
                         user: "campusnavigators@outlook.com",
-                        pass: "tceit123"
+                        pass: "projects123"
                     },
                     tls:{
                         rejectUnauthorized: false
@@ -295,8 +297,11 @@ app.post('/enroll.html',(req, res)=>{
                 }
                 transporter.sendMail(mailoptions, (err, info)=>{
                     if(err)
-                        throw err;
+                       // throw err;
+                       console.log("Message not sent");
+                    else{
                     console.log("Message sent");
+                    }
                 })
             })
         res.write(`<script>window.alert('Inserted!'); window.location.href = 'enroll.html';</script>`)
@@ -429,7 +434,7 @@ function importExcelData2MySQL(filePath){
                     port: 587,
                     auth:{
                         user: "campusnavigators@outlook.com",
-                        pass: "tceit123"
+                        pass: "projects123"
                     },
                     tls:{
                         rejectUnauthorized: false
@@ -445,8 +450,11 @@ function importExcelData2MySQL(filePath){
                 }
                 transporter.sendMail(mailoptions, (err, info)=>{
                     if(err)
-                        throw err;
+                    console.log("Message not sent");
+                    else{
                     console.log("Message sent");
+                    }
+                    
                 })
             })
         })
